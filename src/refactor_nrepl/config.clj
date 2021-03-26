@@ -19,7 +19,7 @@
 
    ;; When true `clean-ns` will remove unused symbols, otherwise just
    ;; sort etc
-   :prune-ns-form true
+   :prune-ns-form false
 
    ;; Should `clean-ns` favor prefix forms in the ns macro?
    :prefix-rewriting false
@@ -31,7 +31,7 @@
    ;; even if they're otherwise unused.
    ;; This seq of strings will be used as regexp patterns to match
    ;; against the libspec name.
-   :libspec-whitelist ["^cljsjs"]
+   :libspec-whitelist ["^cljsjs", ".*"]
 
    ;; Regexes matching paths that are to be ignored
    :ignore-paths []
